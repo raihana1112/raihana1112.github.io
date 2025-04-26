@@ -12,7 +12,7 @@
   --custom-btn-bg-hover-color:    #F2CC8F;
   --dark-color:                   #000000;
   --p-color:                      #717275;
-  --link-hover-color:             #F2CC8F;
+  --link-hover-color:             #F2CC8F;  
 
   --body-font-family:             'DM Sans', sans-serif;
 
@@ -634,10 +634,10 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../images/anna-rosar-ZxFyVBHMK-c-unsplash.jpg');
+  background-image: url('../images/rektorat.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   position: relative;
   padding-top: 100px;
   height: 105vh;
@@ -1216,6 +1216,24 @@ footer p{
   }
 }
 
+.custom-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .custom-btn-group {
+    flex-direction: column;
+
+  }
+
+  .section-1{
+    margin-top: -200px;
+    line-height: 20px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .navbar-brand {
     font-size: var(--p-font-size);
@@ -1238,6 +1256,7 @@ footer p{
     width: 72%;
   }
 }
+
 
 @media screen and (max-width: 360px) {
   .custom-btn {
